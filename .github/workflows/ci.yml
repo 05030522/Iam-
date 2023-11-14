@@ -67,12 +67,12 @@ jobs:
       - name: 테스트 코드 실행
         run: ./gradlew --info test
 
-      - name: 테스트 결과 PR에 코멘트 작성
-        uses: EnricoMi/publish-unit-test-result-action@v2
-        if: always()  # 테스트가 실패했을때만 or 테스트가 성공했을때만 알려주기(여기선 둘다!)
-        with:
-          files: |
-            **/build/test-results/**/*.xml
+#      - name: 테스트 결과 PR에 코멘트 작성
+#        uses: EnricoMi/publish-unit-test-result-action@v2
+#        if: always()  # 테스트가 실패했을때만 or 테스트가 성공했을때만 알려주기(여기선 둘다!)
+#        with:
+#          files: |
+#            **/build/test-results/**/*.xml
 
       # Files changed에서 어디에서 잘못되었는지 가르쳐준다.
       - name: Publish Test Report
