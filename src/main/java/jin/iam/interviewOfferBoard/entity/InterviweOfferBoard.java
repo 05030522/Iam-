@@ -1,4 +1,4 @@
-package jin.iam.entity;
+package jin.iam.interviewOfferBoard.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

@@ -1,18 +1,15 @@
-package jin.iam.entity;
+package jin.iam.like.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
-import java.security.Principal;
-
 @Entity
-public class Portfolio {
+public class Like {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String title;
-    private String content;
     private Long userId;
+    private Long protfolioId;
 }

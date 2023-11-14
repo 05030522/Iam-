@@ -1,12 +1,10 @@
-package jin.iam.entity;
+package jin.iam.questionBoard.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
-import java.security.Principal;
-import java.security.PrivateKey;
 import java.util.Date;
 
 @Entity
