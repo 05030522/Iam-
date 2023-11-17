@@ -1,5 +1,6 @@
 package jin.iam.user.controller;
 
+import io.swagger.v3.oas.annotations.Operation;
 import jin.iam.commmon.dto.ApiResponseDto;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -18,7 +19,7 @@ import java.util.List;
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("/api")
-@Tag(name = "유저 관련 API", description = "유저 관련 API 입니다.")
+//@Tag(name = "유저 관련 API", description = "유저 관련 API 입니다.")
 public class UserController {
     // 회원가입
     @PostMapping("/users/sign-up")
@@ -40,3 +41,4 @@ public class UserController {
             return ResponseEntity.ok().body(new ApiResponseDto(HttpStatus.OK.value(), "회원가입이 완료되었습니다."));
         }
     }
+}
